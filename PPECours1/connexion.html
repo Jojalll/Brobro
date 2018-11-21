@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		.navbar{
+        	font-family: Times, Times New Roman, serif;
+      	}
+      	.navbar-light .navbar-brand {
+        	color: rgb(255, 191, 0);
+      	}
+      	.navbar-light .navbar-nav .nav-link {
+        	color: rgb(255, 191, 0);
+      	}
+        .row-principal {
+        	display: flex;
+        	background-color: #050f4a45;
+      	}
+      	.bg-light {
+        	background-color: rgb(40, 55, 130) !important;
+        }
+
+        .titre{
+        	color: rgb(40, 55, 130);
+        	background-color: rgb(222, 183, 111); 
+        	font-family: Times, Times New Roman, serif;
+        }
+        h1 {
+        	margin: auto;
+        }
+        table{
+        	margin-left: 200px;
+        }
+        input {
+			width: 300px;
+		}
+        .formulaire {
+        	background-color: rgb(40, 55, 130);
+        	color:rgb(222, 183, 111);
+        	font-family: Times, Times New Roman, serif;
+        	font-size: 16px;
+        	margin: auto;
+        	height: 400px;
+        }
+        .mon-container{
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+		.row {
+        	min-block-size: 90px;
+        	padding: 12px;
+        	margin: auto;
+      	}
+      	.basdepage a {
+        	color : rgb(255, 191, 0) ;
+        	margin: 100px;
+      	}
+      	
+      	.mdp {
+      		color: rgb(40, 55, 130);
+        	background-color: rgb(222, 183, 111);
+        	padding-left: 450px;
+       	}
+      	.btn-connexion a {
+        	display:block;
+        	padding: 8px 30px;
+        	font-family: Times, Times New Roman, serif;
+        	text-decoration: none;
+        	color: rgb(255, 191, 0);
+        	background: url(ressource/image/boutonnoir.png) no-repeat;
+        	border-radius: 7px;
+        	text-align: center;
+        	
+        	
+      	}
+      	.btn-connexion a:hover {
+        	background: url(ressource/image/boutonnoir2.png) no-repeat;
+      	}
+	</style>
+  <script>
+    
+    function verification() {
+      var id, mdp;
+      id=document.getElementById("mail");
+      mdp=document.getElementById("motdepasse");
+      ok=true;
+
+      if(id.value ==""){
+        id.style.backgroundColor = "#f75a5a";
+              ok = false;
+      }
+      if(mdp.value ==""){
+        mdp.style.backgroundColor = "#f75a5a";
+              ok = false;
+      }
+    return ok;
+    };
+
+  </script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">L'OCCAZ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+        </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rechercher par catégorie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Déposer une annonce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="enquete.html">Enquête</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="connexion.html">Connexion</a>
+            </li>
+          </ul>
+
+      </nav> 
+
+  </header>
+
+
+<form action="" method="post">
+	<div class="row-principal">
+		<div class="container mon-container">
+				<div class="row col-md-10 titre">
+					<p><h1> Se Connecter </h1></p>
+				</div>
+				<div class="row col-md-10 formulaire">
+					<div class="row table">
+						<table>
+							<tr><th><label for="email"> Identifiant :</label></th></tr>
+							<tr><th><input type="text" id="mail" value=""></th></tr>
+							<tr><th><label for="motdepasse"> Mot de passe :</label></th></tr>
+							<tr><th><input type="text" id="motdepasse" value=""></th></tr>
+                		</table>
+                	</div>
+                	<div class="row bouton">
+                		<div class="btn-connexion" onclick="javascript:verification()">
+                        	<p><a href="#">Se connecter</a></p>
+                		</div>
+                	</div>
+				</div>
+				<div class="row col-md-10 mdp">
+                	<p><a href="#">Mot de passe oublié</a></p>	
+				</div>
+		</div>
+	</div>
+</form>
+
+<!-- Début footer -->
+<footer>
+  <div class="col-md-12 bg-light">
+      <div class="row">
+        <div class="col-md-3  basdepage">
+            <p> <a href="#"> A propos de nous </a> </p>
+        </div>
+        <div class="col-md-3 offset-md-6 offset-sm-2 basdepage">
+            <p> <a href="#"> Revenir en haut </a> </p>
+        </div>  
+      </div>
+  </div>
+</footer>
+<!-- Fin footer --> 
+</body>
+</html>

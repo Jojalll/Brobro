@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title></title>
+  </head>
+  <body>
+
+    <style>
+      .navbar{
+        font-family: Times, Times New Roman, serif;
+      }
+      .navbar-light .navbar-brand {
+        color: rgb(255, 191, 0);
+      }
+      .navbar-light .navbar-nav .nav-link {
+        color: rgb(255, 191, 0);
+      }
+      .body{
+            background-color: #c3c2e8;
+      }
+      #InlineFrame1{
+        width: auto !important;
+        padding: 10px 10px;
+      }
+      #meteo{
+        padding: 10px 10px;
+      }
+      .col-news{
+        background: #F5F5F5;
+      }
+      .state-news{
+        font-size: 8px;
+      }
+      .col-pub{
+        height: 333px;
+        padding: 0;
+        margin-top : 12px;
+      }
+      .col-news{
+        margin-top : 12px;
+      }
+      .col-pub a img{
+        height: 100%;
+        width: 100%;
+      }
+      .row-principal{
+        display: flex;
+        background-color: #050f4a45;
+      }
+      .text-nb-participant{
+        margin-left: 16px;
+      }
+      .text-inscription{
+        color: rgb(40, 55, 130);;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: Times, Times New Roman, serif;
+      }
+      .col-inscription{
+        background: rgb(222, 183, 111);
+        text-align: center;
+        margin: 12px;
+      }
+      .btn-inscription a {
+        display:block;
+        padding: 7px 0px;
+        font-family: Times, Times New Roman, serif;
+        text-decoration: none;
+        color: rgb(255, 191, 0);
+        background: url(ressource/image/boutonnoir.png) no-repeat;
+        border-radius: 7px;
+      }
+      .btn-inscription a:hover {
+        background: url(ressource/image/boutonnoir2.png) no-repeat;
+      }
+      .col-btn-site{
+        border-radius: 7px;
+        cursor: pointer;
+        padding: 0;
+      }
+      .bg-light {
+        background-color: rgb(40, 55, 130) !important;
+      }
+      .col-carousel{
+        height: 448px;
+        margin-top: 12px;
+      }
+      .carousel-item{
+        height: 100%;
+      }
+      .carousel-item img{
+        height: 100%;
+      }
+      .carousel-inner{
+        height: 100%
+      }
+      .carousel{
+        height: 100%
+      }
+      .row{
+        min-block-size: 90px;
+        padding: 12px;
+      }
+      .basdepage a {
+        color : rgb(255, 191, 0) ;
+        margin: 100px;
+      }
+    </style>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">L'OCCAZ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+        </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rechercher par catégorie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Déposer une annonce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="enquete.html">Enquête</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="connexion.html">Connexion</a>
+            </li>
+          </ul>
+
+      </nav> 
+
+  </header>
+
+      
+
+
+      <!-- Début de notre ligne pricipal -->
+      <div class="row-principal">
+
+        <!-- Début de notre col gauche -->
+        <div class="col-md-2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                  <iframe name="InlineFrame1" id="InlineFrame1" style="width:180px;height:220px;" src="https://www.mathieuweb.fr/calendrier/calendrier-des-semaines.php?nb_mois=1&nb_mois_ligne=4&mois=&an=&langue=fr&texte_color=B9CBDD&week_color=DAE9F8&week_end_color=C7DAED&police_color=453413&sel=true" scrolling="no" frameborder="0" allowtransparency="true">
+                  </iframe>
+              </div>
+
+              <div class="col-md-12">
+                <div id="meteo">
+                  <a target="_blank" href="https://hotelmix.fr/weather/paris-18145"><img src="https://w.bookcdn.com/weather/picture/4_18145_1_3_31547a_180_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=2&domid=581&anc_id=20196"  alt="booked.net"/></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin de notre col gauche -->
+
+        <!-- Début de notre col centrale -->
+        <div class="col-md-8">
+          <div class="container">
+
+            <!-- Début carousel -->
+            <div class="row">
+              <div class="col-md-12 col-carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="ressource/image/brocante2.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="ressource/image/vetements.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="ressource/image/brocante.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Fin carousel -->
+
+            <!-- Début inscription -->
+            <div class="row">
+                <div class="col-md-12 col-inscription">
+                  <p class="text-inscription">Vous n'avez pas un compte? créez le maintenant!</p>
+                    <div class="col-md-2 offset-md-5 col-btn-site">
+                      <div class="btn-inscription">
+                        <p><a href="#">Inscription</a></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fin inscription -->
+            
+          </div>
+        </div>
+        <!-- Fin de notre col centrale -->
+
+        <!-- Début de notre col droite -->
+        <div class="col-md-2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-detail-right">
+
+                <!-- Début zone pub -->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 col-pub">
+                        <a href="https://www.brocantelab.com/" target="_blank"><img src="ressource/image/pub.jpg"></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fin zone pub -->
+
+                <!-- Début zone news -->
+                <div class="container">
+                  <div class="row">
+            
+                    <div class="col-md-12 col-news">
+                      <p class="titre-news">Nos dernnier brocante :</p>
+                      <div class="info-news">
+                        
+                      </div>
+                      <p class="state-news"><span class="text-jour">Jour de la brocante :</span><span class="text-nb-participant">Nombre de participants :</span></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fin zone news -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin de notre col droite -->
+
+      </div>
+      <!-- Fin de notre ligne pricipal -->
+
+<!-- Début footer -->
+<footer>
+  <div class="container col-md-12 bg-light">
+      <div class="row">
+        <div class="col-md-3 basdepage">
+            <p> <a href="#"> A propos de nous </a> </p>
+        </div>
+        <div class="col-md-3 offset-md-6 basdepage">
+            <p> <a href="#"> Revenir en haut </a> </p>
+        </div>  
+      </div>
+  </div>
+</footer>
+<!-- Fin footer --> 
+
+  </body>
+</html>
