@@ -1,0 +1,52 @@
+  #container-formulaire-enquete-page-1{
+    background-color: #050f4a45;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+     #formulaire-enquete{
+    width: 100%
+   }
+   .titre-page{
+    width: 100%;
+    text-align: center;
+        padding: 12px 12px;
+   }
+   .bg-light{
+        background-color: rgb(40, 55, 130) !important;
+   }
+   .navbar {
+    font-family: Times, Times New Roman, serif;
+}
+.row-page{
+      background-color: rgb(222, 183, 111);
+          margin: 12px 128px;
+}
+.row-input-formulaire{
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(40, 55, 130);
+    padding: 12px;
+    margin: 28px 46px;
+}
+ label{
+      color: rgb(255, 191, 0);
+}
+.nav-link{
+  color: rgb(255, 191, 0) !important;
+}
+.btn-connexion a {
+          display:block;
+          padding: 8px 30px;
+          font-family: Times, Times New Roman, serif;
+          text-decoration: none;
+          color: rgb(255, 191, 0);
+          background: url(ressource/image/boutonnoir.png) no-repeat;
+          border-radius: 7px;
+          text-align: center;
+          
+          
+        }
+        i {
+          color: yellow;
+        }

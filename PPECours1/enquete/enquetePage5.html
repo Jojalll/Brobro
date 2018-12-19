@@ -1,0 +1,123 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+            <link rel="stylesheet" href="../ressource/css/enquete.css">
+    <title></title>
+    <script src="../ressource/js/contact.js"></script>
+        <script src="../ressource/js/enquete.js"></script>
+
+</head>
+<body>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand nav-link" href="index.html">L'OCCAZ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+        </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rechercher par catégorie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Déposer une annonce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="enquete.html">Enquête</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="connexion.html">Connexion</a>
+            </li>
+          </ul>
+
+      </nav> 
+
+  </header>
+
+<div id="cook">
+</div>
+<!-- Début de la page d'enquete 1 -->
+<div class="container" id="container-formulaire-enquete-page-1">
+  <div class="row row-formulaire">
+    <!-- ############################### Début de la page 1  ############################ -->
+   <form id="formulaire-enquete">
+      <div class="row row-page" id="page-1">
+<!-- ############################### Début choix note  ############################ -->
+
+        <div class="row row-input-formulaire" id="row-page-5">
+          <input type="hidden" value="null" id="inputNote" name="">
+          <div class="col-md-12" style="display: flex; flex-direction: row; text-align: -webkit-right; font-size: 38px;" id="zone-note">
+              <div class="col-md-2">
+               <i id="note-1" class="far fa-star" onclick="javascript:setNote(1, 'note-1')" onmouseover="UpStar('note-1', 1)" onmouseout="DownStar('note-1', 1)"></i>
+              </div>
+              <div class="col-md-2">
+                <i id="note-2" class="far fa-star" onclick="javascript:setNote(2, 'note-2')" onmouseover="UpStar('note-2', 2)" onmouseout="DownStar('note-2', 2)"></i>
+              </div>
+              <div class="col-md-2">
+                <i id="note-3" class="far fa-star" onclick="javascript:setNote(3, 'note-3')" onmouseover="UpStar('note-3', 3)" onmouseout="DownStar('note-3', 3)"></i>
+              </div>
+              <div class="col-md-2">
+                <i id="note-4" class="far fa-star" onclick="javascript:setNote(4, 'note-4')" onmouseover="UpStar('note-4', 4)" onmouseout="DownStar('note-4', 4)"></i>
+              </div>
+              <div class="col-md-2">
+                <i id="note-5" class="far fa-star" onclick="javascript:setNote(5, 'note-5')" onmouseover="UpStar('note-5', 5)" onmouseout="DownStar('note-5', 5)"></i>
+              </div>
+          </div>
+         <div id="cook">
+</div>
+        </div>
+
+        </div>
+      <!-- ############################### Fin choix note  ############################ -->
+
+      </div>
+    </form>
+    <!-- ############################### Fin de la page 1  ############################ -->
+  </div> 
+</div>
+<!-- Fin de la page d'enquete 1 -->
+
+
+<!-- Début footer -->
+<footer>
+  <div class="col-md-12 bg-light">
+      <div class="row">
+        <div class="col-md-3 basdepage">
+            <p> <a href="#"> A propos de nous </a> </p>
+        </div>
+        <div class="col-md-3 offset-md-6 basdepage">
+            <p> <a href="#"> Revenir en haut </a> </p>
+        </div>  
+      </div>
+  </div>
+</footer>
+<!-- Fin footer --> 
+
+</body>
+</html>

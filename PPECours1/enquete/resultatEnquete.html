@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="../ressource/css/enquete.css">
+    <title></title>
+    <script src="../ressource/js/contact.js"></script>
+    <script src="../ressource/js/enquete.js"></script>
+
+</head>
+<body>
+
+   
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand nav-link" href="index.html">L'OCCAZ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+        </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rechercher par catégorie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Déposer une annonce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="enquete.html">Enquête</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="connexion.html">Connexion</a>
+            </li>
+          </ul>
+
+      </nav> 
+
+  </header>
+
+
+<!-- Début de la page d'enquete 1 -->
+<div class="container" id="container-formulaire-enquete-page-1">
+  <div class="row row-formulaire">
+    <!-- ############################### Début de la page 1  ############################ -->
+   <form id="formulaire-enquete">
+      <div class="row row-page" id="page-1" style="justify-content: center;">
+         <div id="cook" style="font-size: 68px;">
+</div>
+
+      </div>
+    </form>
+    <!-- ############################### Fin de la page 1  ############################ -->
+  </div> 
+</div>
+<!-- Fin de la page d'enquete 1 -->
+
+
+<!-- Début footer -->
+<footer>
+  <div class="col-md-12 bg-light">
+      <div class="row">
+        <div class="col-md-3 basdepage">
+            <p> <a href="#"> A propos de nous </a> </p>
+        </div>
+        <div class="col-md-3 offset-md-6 basdepage">
+            <p> <a href="#"> Revenir en haut </a> </p>
+        </div>  
+      </div>
+  </div>
+</footer>
+<!-- Fin footer --> 
+ <script>
+  $( document ).ready(function() {
+    var affiche = document.getElementById('cook');
+    var afficheHtml = "";
+                        switch(lireCookie('radioNote')){
+                          case "1":
+                            afficheHtml = '<i class="fas fa-grin-beam-sweat"></i>';
+                            affiche.innerHTML = afficheHtml;
+                            break;
+                          case "2":
+                          afficheHtml = '<i class="fas fa-grin"></i>';
+                            affiche.innerHTML = afficheHtml;
+                            break;
+                          case "3":
+                          afficheHtml = '<i class="fas fa-smile"></i>';
+                            affiche.innerHTML = afficheHtml;
+                            break;
+                          case "4":
+                            afficheHtml = '<i class="fas fa-grin-squint"></i>';
+                            affiche.innerHTML = afficheHtml;
+                            break;
+                          case "5":
+                            afficheHtml = '<i class="fas fa-grin-stars"></i>';
+                            affiche.innerHTML = afficheHtml;
+                            break;
+                        }
+                        affiche.innerHTML = afficheHtml
+  });
+
+
+             var affiche = document.getElementById('cook');
+                        affiche.innerHTML = 'Nom : ' + lireCookie('nom')+'<br> Prenom : '+lireCookie('prenom')+'<br> Age : '+lireCookie('age')+'<br> Choix 1 : ' + lireCookie('choix1')+'<br> Choix 2 : '+lireCookie('choix2')+'<br> Choix 3 : '+lireCookie('choix3')+'<br> Radio choix : '+lireCookie('radioChoix')+'<br> Commentaire : '+lireCookie('testArea')+'<br> Note : '+lireCookie('radioNote');
+            
+</script>
+</body>
+</html>
